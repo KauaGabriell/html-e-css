@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulários</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CheckBox</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="efut" id="iefut"> <label for="iefut">Futebol</label> <br>
+            <!--COLOCAR O LABEL PARA SER POSSÍVEL MARCAR O CHECK CLICANDO NA PALAVRA-->
+            <input type="checkbox" name="evolei" id="ievolei" checked> <label for="ievolei"></label> Volei <br>
+            <input type="checkbox" name="ebasq" id="iebasq"> <label for="iebasq">Basquete</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--RADIO USAMOS QUANDO PODEMOS MARCAR UMA OPÇÃO APENAS
+                O ATRIBUTO "NAME" TEM QUE TER O MESMO EXEMPLO-->
+            <input type="radio" name="sexo" id="isxmasc"> <label for="isxmasc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
