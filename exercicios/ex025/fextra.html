@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Teste</title>
+    <style>
+        body{
+            background-color: lightblue;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário (Extra)</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="20">
+            </p>
+
+            <p>
+                <label for="iaddres">Endereço:</label>
+                <input type="text" name="addres" id="iaddres" required autocomplete="address-level1" minlength="8" maxlength="10">
+            </p>
+
+            <p>
+                <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+            </p>
+
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2})\d{4,5}-\d{4}$" required>
+            </p>
+            
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email">
+            </p>
+        
+
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="Senha" id="isenha" minlength="5" maxlength="15" required>
+        </p>
+
+    </fieldset>
+
+        <fieldset>
+            <legend>Jogos</legend>
+            <p>
+            
+                <input type="checkbox" name="lol" id="ilol"> <label for="ilol">League of Legends</label> <br>
+                <input type="checkbox" name="apex" id="iapex"> <label for="iapex">Apex Legend</label>s <br>
+                <input type="checkbox" name="cs" id="ics"> <label for="ics">CSGO</label>
+            
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata" required value="2024-04-08">
+            </p>
+
+            <p>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes" required value="2024-04">
+            </p>
+
+            <p>
+                <label for="itime">Hora:</label>
+                <input type="time" name="time" id="itime" required value="12:00">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                Avaliação
+            </legend>
+
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+            <p>
+                <label for="irange">Nivel de Satisfação</label>
+                <input type="range" name="range" id="irange" value="2" min="0" max="10">
+            </p>
+
+            <p>
+                <label for="ifoto">Foto Perfil:</label>
+                <input type="file" name="Foto" id="ifoto">
+            </p>
+
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
