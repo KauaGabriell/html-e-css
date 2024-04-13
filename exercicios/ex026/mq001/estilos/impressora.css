@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*Estilo para Impressora*/
+
+/*Estilos para impressora*/
 
 *{
     margin: 10px;
@@ -8,7 +9,7 @@
 
 html{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
@@ -17,6 +18,10 @@ menu{
 }
 
 article::after{
-    content: "Esse artigo foi impresso através do site XXXXXX.XXXXXX";
+    content: Esse artigo foi impresso através do site XXXXXXX;
+    
+}
+
+article{
     width: 100%;
 }
