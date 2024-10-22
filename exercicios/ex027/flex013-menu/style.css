@@ -23,12 +23,12 @@ header{
 }
 
 header > h1{
-    border: 1px dotted black;
     flex: 0 0 200px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
 }
 
 nav{
-    border: 1px dotted black;
     display: flex;
     justify-content: flex-end;
 }
@@ -47,8 +47,6 @@ nav > a:hover{
     background-color: white;
     color: black;
     transition: background-color 0.3s;
-}
-
 main{
     margin: 10px;
     padding: 10px;
@@ -56,3 +54,20 @@ main{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.478);
 }
 
+@media screen and (max-width: 580px){
+
+    header, nav{
+        flex-flow: column nowrap;
+    }
+
+    header > h1{
+        flex-basis: 50px;
+    }
+
+    nav > a{
+        width: 90vw;
+    }
+
+    
+    
+}
